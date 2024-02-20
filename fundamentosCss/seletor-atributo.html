@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista</title>
+    <style>
+        /** Com sinal de igual tem que ser o valor extamente como no código**/
+        [title=Netflix] {
+            color: red;
+        }
+        [title=Spotify] {
+            color: green;
+        }
+/** para colocar somente uma palavra havendo outras basta adicionar o acento
+~tio antes do igual**/
+        [title~=streaming] {
+            color: green;
+        }
+/** Forma de colocar um atributo com 
+algum item especifico acento circunflexo ^ **/
+        [href^="https://"] {
+        background: lightgreen;
+        }
+        /** Forma de colocar um atributo com 
+algum item com sufixousar $ **/
+
+[href$="login"] {
+        background: pink;
+        }
+/** procurar em qualquer valor  do atributo**/
+[href*="login"] {
+        background: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Seletor Atributo</h1>
+
+    <ul>
+        <li><a title="Netflix" href="https://www.netflix.com/br/">Netflix</a></li>
+        <li><a title="Prime Video" href="https://www.login.primevideo.com/">Prime Video</a></li>
+        <li><a title="streaming Spotify"href="https://open.spotify.com/login">Spotify</a></li>
+        <li><a title=" streaming">Disney Plus</a></li>
+    </ul>
+</body>
+</html>

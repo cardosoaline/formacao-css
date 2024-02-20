@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores-predefinidas</title>
+    <style>
+        /** https://www.w3schools.com/colors/colors_names.asp*/
+     /* #pre-definidas {
+        color: indianred;
+     } */
+    
+     /* body {
+        background: purple;
+     }
+        li {
+            background: aqua;
+        }
+
+        #current-color {
+            background: transparent;
+            color: white;
+        } */
+
+        /* #current-color {
+            color: deeppink;
+            border: 2px solid currentColor;/* currentcolor palavra resevada que colocamos na borda para pegar a mesma cor do atributo color.
+            pode -se utilizar no background também está palavra reservada.
+        }  */
+        /* #rgb {
+            /*red,green blue de 0 á 255 cores primarias e posso utilizar porcentagem também
+            color: rgb(107, 141, 14);
+            background: rgb(20%, 45%, 14%);
+        } */
+
+        /*
+        #rgba {
+            ultimo campo no caso o quarto item é para deixar 
+            transparente de 0.1 a 0.9 ou 1.0
+            color: rgba(130, 80, 0, 0.8)
+        }
+*/
+
+   /* #hex {
+    alphanumericos no hexadecimal do 0 até 9 e de A até f
+    f alto 0 menor então tudo 0 preto,tudo f branco,conseguimos adicionar transparencia 6 numeros e mais dois ultimos são a transparencia no caso o 80
+        color: #0FF8F980;
+   }*/
+
+  /* #hsl {
+     Matriz ,saturação,luminosidade
+    color: hsl(330, 270%, 20%);
+   }*/
+
+  /* #hsla {
+    ultimo campo é o alpha que seria a transparencia
+    background: hsla(330, 270%, 20%, 0.5);
+   }*/  
+
+    </style>
+</head>
+<body>
+
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores:</p>
+
+    <ul>
+        <li id="pre-definidas">Cores pré-definidas</li>
+        <li id="current-color">Palavra-chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+    <br>
+    <h3>HSL</h3>
+    <code>hsl(hue,saturation,lightness)</code>
+    <ul>
+        <li><b>Hue (matriz):</b> é o grau na roda de cores</li>
+        <ul>
+            <li>0 ou 360 é vermelho</li>
+            <li>120 é verde</li>
+            <li>240 é azul</li>
+        </ul>
+    </ul>
+</body>
+</html>

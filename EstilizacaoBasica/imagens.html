@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        #fill {
+            object-fit: fill; /*Fica completa a img no quadrado*/
+        }
+        #contain {
+            object-fit: contain; /*não fica distorcida a imagem */
+        }
+        #cover {
+            object-fit: cover;
+        }
+        #none {
+            object-fit: none;
+        }
+        #scale-down {
+            object-fit: scale-down;
+        }
+        #object-position {
+            object-fit: cover;
+            object-position: left 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade: <code>object-fit</code></h1>
+    <code>object-fit: fill;</code> (padrão)
+    <div>
+        <img src="../assets/img/dio.webp" alt="" id="fill">
+
+    </div>
+    <br>
+    <code>object-fit: contain;</code> 
+    <div>
+        <img src="../assets/img/dio.webp" alt="" id="contain">
+    </div>
+    <br>
+    <code>object-fit: cover;</code> 
+    <!-- corta a imagem que estaria fora -->
+    <div>
+        <img src="../assets/img/dio.webp" alt="" id="cover">
+    </div>
+    <br>
+    <code>object-fit: none;</code> 
+    <!-- corta a imagem que estaria fora -->
+    <div>
+        <!-- mantem o tamanho original ignorando o tamanho do elemento pai -->
+        <img src="../assets/img/dio.webp" alt="" id="none">
+    </div>
+    <br>
+    <code>object-fit: scale-down;</code> 
+    <div>
+        <!--ele vai escolher a configuração melhor ,escolhe o menor -->
+        <img src="../assets/img/dio.webp" alt="" id="scale-down">
+    </div>
+    <br>
+    <code>object-position</code> 
+    <div>
+      <!-- ¨primeiro valor horizontal eixo x pode se utilizar porcentagem ou px 
+      y vertical  e aceita valores negativos. podemos usar left rigth center start e end-->
+        <img src="../assets/img/dio.webp" alt="" id="object-position">
+    </div>
+
+
+</body>
+</html>

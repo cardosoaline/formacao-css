@@ -1,0 +1,41 @@
+/**Seletor por tag h1 div ul e etc **/
+h1 {
+    background: darkblue;
+    color: lightgreen;
+}
+
+div {
+    background: lightblue;
+    color: darkblue;
+}
+
+li {
+    background: lightgreen;
+}
+/**Seletor id unico exemplo Digital **/
+#texto-boas-vindas {
+    background: gray;
+    color: aqua;
+}
+
+#explicacao-seletores {
+color:brown ;
+}
+/**Seletor class pode se colocar em vários lugares exemplo copias **/
+.titulo-bem-vindos {
+    color: aquamarine;
+}
+
+.texto-maiusculo {
+    text-transform: uppercase;
+}
+
+/**Seletor universal ,da mesma forma da pra fazer um resset**/
+
+*{
+    /**tudo em negrito **/
+    font-weight: bold;
+}
+
+/** Seletor atributto**/
+

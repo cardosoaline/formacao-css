@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alterando fundo elementos</title>
+    <style>
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            /*se a imagem for menor ela vai se multiplicando*/
+            background-image: url('../assets/img/gato.jfif');
+        }
+
+        .exemplo-dois {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            /* cores para gradiente de dois até mais cores*/
+            background-image: linear-gradient(#9932CC,darkmagenta,pink,yellow);
+        }
+        .exemplo-tres {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            /* cores para gradiente de dois até mais cores*/
+            background-image: radial-gradient(#180f1d,darkmagenta,pink,yellow);
+        }
+        .exemplo-quatro {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            /* repete os efeitos*/
+            background-image: repeating-linear-gradient(to top,palevioletred 0 20px,lightpink 20px 40px);  
+        }
+        .exemplo-cinco {
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+            background-size: 100% 1.2em;
+        }
+        .exemplo-seis {
+            width: 300px;
+            height: 300px;
+            /* tem como colocar duas imagens camadas*/
+            background-image: url('../assets/img/dio.webp'),url("../assets/img/gato.jfif");
+
+    </style>
+</head>
+<body>
+
+    <div class="exemplo">
+
+    </div>
+    <br>
+    <div class="exemplo-dois">
+    </div>
+    <br>
+    <div class="exemplo-tres">
+    </div>
+    <br>
+    <div class="exemplo-quatro">
+    </div>
+    <br>
+    <div class="exemplo-cinco">
+        <p>O mundo precisa de Jesus assim como o ser humano necessita de oxigenio e agua!</p>
+    </div>
+    <br>
+    <div class="exemplo-seis">
+    </div>
+    
+</body>
+</html>

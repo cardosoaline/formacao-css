@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>irmao</title>
+
+    <style>
+        /** irmao adjacente **/
+        div + p {
+            color: blueviolet;
+        }
+
+        .fundo-verde + p{
+            background: lightcoral;
+        }
+          /** colocar o estilo para todos os irmão **/
+
+          div ~ p{
+            color: red;
+          }
+          .fundo-verde ~ p{
+            background: pink;
+          }
+    </style>
+</head>
+<body>
+
+    <h1>Combinador Irmão</h1>
+
+    <div>
+        <p>Paragrafo 1 dentro da div</p>
+        <p>Paragrafo 2 dentro da div</p>
+        <span>
+            <!--P ja é elemento neto-->
+            <p>paragrafo 3 dentro da div,dentro do span.</p>
+        </span>
+    </div>
+
+    <p>Paragrafo 4, fora da div irmã tag vem posterior a div</p>
+    <p>paragrafo 5,fora da div irmã tag vem posterior a div</p>
+
+    <div class="fundo-verde">
+        <p>Paragrafo 7 dentro da div</p>
+        <p>Paragrafo 8 dentro da div</p>
+        <span>
+            <!--P ja é elemento neto-->
+            <p>paragrafo 3 dentro da div,dentro do span.</p>
+        </span>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore veritatis reiciendis neque labore autem ipsam delectus voluptatem voluptatum velit. Sint incidunt porro quibusdam quaerat neque exercitationem est dolor dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque quibusdam repellendus voluptatem modi perferendis blanditiis expedita non soluta voluptas magni, alias dolores distinctio! Fugit ipsa hic quas earum sint.</p>
+    
+    <div class="fundo-azul">
+        <p>Paragrafo 9 dentro da div</p>
+        <p>Paragrafo 10 dentro da div</p>
+        <span>
+            <!--P ja é elemento neto-->
+            <p>paragrafo 3 dentro da div,dentro do span.</p>
+        </span>
+    </div>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In assumenda quos voluptatum beatae earum ipsam dignissimos, reiciendis quibusdam nemo dicta rem tempora laborum nulla corporis ratione excepturi est sequi perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio in recusandae modi quia quos sed aperiam! Natus eius, veniam eaque harum modi a maiores, vel accusamus qui enim aliquid blanditiis?</p>
+    
+</body>
+</html>

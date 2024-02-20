@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grupo</title>
+    <link rel="stylesheet" href="assets/css/agrupa.css">
+    <!--estilo da forma agrupada dividindo as tags por virgula-->
+    <style>
+        /**
+        h1,p {
+            color: red;
+            background: lightblue;
+        }
+
+        .texto-doc,div {
+         color: pink;
+        }
+
+        #link-referencia,#botão-fechar {
+            color: brown;
+        }
+
+        h1, [id^="botao"] {
+            background: crimson;
+        }**/
+        a.texto-doc {
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Agrupamentos de seletores</h1>
+    <p>Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso,podemos separar os seletores utilizando uma virgula(,).</p>
+
+    <div>Assim,não precisamos ficar copiando e colando os mesmos códigos para todos,nós podemos fazer um só bloco de css e reutilizar as mesmas regras!</div>
+
+    <br><br>
+    <a id="link-referencia"  class="texto-doc" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-referencia" href="#">Clique para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="#">voltar</a>
+    <br><br>
+    <button id="botão-fechar" href="#">fechar pagina</button>
+</body>
+</html>

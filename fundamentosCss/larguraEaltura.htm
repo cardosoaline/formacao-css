@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        div {
+            /** background: lightblue;
+   width: 100px;/** Largura **/
+
+    /** width: auto;/**Define largura automatica e ocupa 100% **/
+         
+   /** width: initial;/** ele assume um valor padrão,se não souber utilize!**/
+
+  /** width: inherit; Define o valor da propriedade de acordo com seu elemento pai */                       
+
+    /**height: 200px;/** Altura**/
+        }
+
+        #div-01 {
+            background: lightblue;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div-02 {
+            background: lightgreen;
+            height: inherit;/**inherit respeita o tamanho do elemento pai */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Propriedades de largura e altura no CSS</h1>
+
+        
+
+        <div>Trilha de css</div>
+
+        <div id="div-01">
+            Sou a div 01
+            <div id="div-02">
+                Sou a div 02
+            </div>
+        </div>
+    
+</body>
+</html>
